@@ -3,7 +3,7 @@
 <html>
     <meta charset="UTF-8">
     <head>
-        <title>James</title>
+        <title>jt - james timotiwu</title>
     </head>
     
     <style type="text/css">
@@ -14,6 +14,23 @@
             float: none !important;
         }
 
+        body:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+            
+        a {
+            color: #000;
+            text-decoration:none;
+        }
+        
+        a:hover {
+            color: #00A0C6;
+            text-decoration: none;
+            cursor:pointer;
+        }
+
         .block-parent {
             
         }
@@ -21,36 +38,58 @@
         .header {
             /* margin-top: 40px; 
             margin-left: 40px; */
-           /* border: 3px solid red; */
-            height: 200px; /*modified*/
+        
+            /* border: 3px solid red;*/
+            height: 15vh; /*modified*/
             width: 300px; /*modified*/
-            font-family: 'Helvetica', sans-serif;
+            /*font-family: 'Helvetica', sans-serif;*/
             font-weight: bold;
-            font-size: 22px;
+            font-size: 24px;
             text-align: left;
             color: #000;
             /* float left to place text boxes right next to each other */
             float: left;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
-        .bio {
+        .block-bio {
+            overflow: hidden; /* keeps float in box */
             /* border: 3px solid blue;*/
-            margin-top: 40px;
-            margin-left: 40px;
+            margin-top: 9vh;
+            margin-left: 1vw;
+            font-family: 'Helvetica', sans-serif;
+            font-size: 18px;
+            text-align: justify;
+            color: #000;
+            /*min height size of browser*/
+           /* float: left; */
+            line-height: 32px;
+        }
+
+        .block-project {
+            overflow: hidden; /* keeps float in box */
+            /* border: 3px solid blue; */
+            margin-top: 8vh;
+            margin-left: 5vh;
             font-family: 'Helvetica', sans-serif;
             font-size: 20px;
             text-align: left;
             color: #000;
            /* float: left; */
-
+        }
     </style>
 
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,300italic,600italic|Source+Sans+Pro:400,300,600,400italic,600italic" rel="stylesheet" type="text/css">
 
     <body>
-        <div class="bio">
-        <div class="header">JAMES TIMOTIWU</div>
-        some bio description here. undergraduate electrical & computer engineering student at the University of Illinois Urbana-Champaign, prev Case Western Reserve. likes robotics, comp vis, iot, research. worked two summers at NASA. <div>
+        <div class="block-bio">
+            <div class="header">james timotiwu</div>
+            is an undergraduate electrical & computer engineering student at the <a href="https://www.ece.illinois.edu"> University of Illinois Urbana-Champaign.</a> likes robotics, comp vis, iot, research. interned two summers at NASA.</div>
+        <img style="height:40%; width:40%; margin-left: 1vh" src="images/bio.jpg" >
+        <div id="project" class="block-project"> 
         <div class="header">PROJECT</div>
+        </div>
     </body>
 </html>
